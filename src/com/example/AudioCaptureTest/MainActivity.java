@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 
         private MediaRecorder myRecorder;
         private MediaPlayer myPlayer;
-        private String outputFile = null, outputFile1=null;
+        private String outputFile = null, outputFile1=null, outputFile2 = null;
         private Button startBtn;
         private Button stopBtn;
         private Button playBtn;
@@ -38,6 +38,8 @@ public class MainActivity extends Activity {
                     getAbsolutePath() + "/javacodegeeksRecording.3gpp";
             outputFile1 = Environment.getExternalStorageDirectory().
                     getAbsolutePath() + "/123.mp3";
+            outputFile2 = Environment.getExternalStorageDirectory().
+                    getAbsolutePath() + "/minions.mp3";
 
             myRecorder = new MediaRecorder();
             myRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
