@@ -100,6 +100,7 @@ public class MainActivity extends Activity {
                 // prepare() fails
                 e.printStackTrace();
             }
+            System.out.println("Hello World");
 
             text.setText("Recording Point: Recording");
             startBtn.setEnabled(false);
